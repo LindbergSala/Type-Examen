@@ -1,0 +1,118 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(Bilder/bakgrund.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #050505;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#book-list, #book-details {
+    margin-top: 2em;
+}
+
+.book-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.book-card {
+    width: 150px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 0 0 auto;
+
+    /* Skapa perspektiv och rotera för "bok"-effekt */
+    transform: perspective(600px) rotateY(15deg);
+    transform-origin: center left;
+}
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.details-box {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.details-cover img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.details-content {
+    flex-grow: 1;
+}
+
+#back-to-list {
+    display: block;
+    margin: 2em auto 0;
+    padding: 0.5em 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-list:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 2em;
+}

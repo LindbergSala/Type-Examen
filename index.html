@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotek av Barnböcker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bibliotek av Barnböcker</h1>
+    </header>
+    <main>
+        <section id="book-list">
+            <h2>Alla Böcker</h2>
+            <div class="book-row">
+                <!-- Böcker kommer listas här dynamiskt -->
+            </div>
+        </section>
+        <section id="book-details" class="hidden">
+            <div class="details-box">
+                <div class="details-cover">
+                    <img id="details-cover-image" src="" alt="Bokomslag">
+                </div>
+                <div class="details-content">
+                    <h3 id="details-title"></h3>
+                    <p><strong>Författare:</strong> <span id="details-author"></span></p>
+                    <p><strong>Utgivningsår:</strong> <span id="details-year"></span></p>
+                    <p><strong>Antal sidor:</strong> <span id="details-pages"></span></p>
+                    <p><strong>Målgrupp:</strong> <span id="details-audience"></span></p>
+                    <p><strong>Handling:</strong> <span id="details-description"></span></p>
+                </div>
+            </div>
+            <button id="back-to-list">Tillbaka till listan</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Barnböcker Bibliotek</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

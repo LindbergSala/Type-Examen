@@ -28,6 +28,19 @@ main {
     margin: 0 auto;
 }
 
+#search-section {
+    margin: 1em 0;
+    text-align: center;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
 #book-list, #book-details {
     margin-top: 2em;
 }
@@ -51,7 +64,6 @@ main {
     transition: transform 0.2s, box-shadow 0.2s;
     flex: 0 0 auto;
 
-    /* Skapa perspektiv och rotera för "bok"-effekt */
     transform: perspective(600px) rotateY(15deg);
     transform-origin: center left;
 }
@@ -107,6 +119,17 @@ main {
 
 #back-to-list:hover {
     background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#search-bar.hidden {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
 }
 
 footer {
